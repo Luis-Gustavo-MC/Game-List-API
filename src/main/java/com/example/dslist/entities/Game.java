@@ -24,8 +24,10 @@ public class Game {
 	private String platforms;
 	private Double score;
 	private String imgUrl;
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
-	private String LongDescription;
+	@Column(columnDefinition = "TEXT")
+	private String longDescription;
 	
 	public Game() {	
 	}
@@ -39,7 +41,7 @@ public class Game {
 			this.score = score;
 			this.imgUrl = imgUrl;
 			this.shortDescription = shortDescription;
-			LongDescription = longDescription;
+			longDescription = longDescription;
 	}
 	//Comparativo de dois objetos
 	@Override
