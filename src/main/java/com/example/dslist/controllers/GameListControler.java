@@ -19,10 +19,16 @@ import com.example.dslist.services.GameService;
 public class GameListControler {
 	@Autowired
 	private GameListService gameListService;
+
+	@Autowired
+	private GameService gameService;
+
 	@GetMapping
 	public List<GameListDTO> findAll(){
-		List<GameListDTO> result = gameListService.findAll();
-		return result;
+		return gameListService.findAll();
 	}
-
+	@GetMapping(value = "/{listId}/games")
+	public List<GameMinDTO> findByList(@PathVariable Long listId){
+		return gameService.findByList(listId);
+	}
 }	

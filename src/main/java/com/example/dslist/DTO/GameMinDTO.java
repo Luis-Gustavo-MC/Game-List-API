@@ -2,6 +2,7 @@ package com.example.dslist.DTO;
 
 import com.example.dslist.entities.Game;
 
+import com.example.dslist.projections.GameMinProjection;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -24,7 +25,13 @@ public class GameMinDTO {
 		this.imgUrl = entivy.getImgUrl();
 		this.shortDescription = entivy.getShortDescription();
 	}
-	
+	public GameMinDTO(GameMinProjection projection) {
+		this.id = projection.getId();
+		this.title = projection.getTitle();
+		this.year = projection.getYear();
+		this.imgUrl = projection.getImgUrl();
+		this.shortDescription = projection.getShortDescription();
+	}
 	public Long getId() {
 		return id;
 	}

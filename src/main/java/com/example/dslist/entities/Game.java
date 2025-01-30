@@ -39,7 +39,7 @@ public class Game {
 			this.score = score;
 			this.imgUrl = imgUrl;
 			this.shortDescription = shortDescription;
-			longDescription = longDescription;
+			this.longDescription = longDescription;
 	}
 	
 	public Long getId() {
