@@ -52,5 +52,5 @@ Este projeto é uma API REST desenvolvida com **Spring Boot** para gerenciar lis
 ### Passos para execução:
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Luis-Gustavo-MC/dslist.git
+   git clone https://github.com/Luis-Gustavo-MC/dslist.git](https://github.com/Luis-Gustavo-MC/Game-List-API.git
 
